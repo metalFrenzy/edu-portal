@@ -1,0 +1,23 @@
+.sidebar {
+    width: 220px;
+    background-color: #2b8887;
+    color: white;
+    padding: 1.5rem;
+    height: 100vh;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 1rem 0;
+            cursor: pointer;
+            font-weight: 500;
+        }
+    }
+}
