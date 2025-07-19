@@ -8,3 +8,23 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #F3FEFF;
 }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  background-color: #F3FEFF;
+  color: #181633;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
