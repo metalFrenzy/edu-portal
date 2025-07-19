@@ -6,8 +6,8 @@ export default function Sidebar() {
       <h2>Edu Portal</h2>
       <ul>
         <li>Dashboard</li>
-        <li>Announcements</li>
-        <li>Quizzes</li>
+        <li>Courses</li>
+        <li>Schedules</li>
       </ul>
     </aside>
   );
