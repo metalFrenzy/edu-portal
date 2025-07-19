@@ -4,9 +4,11 @@ import { useEffect } from 'react';
 import { RootState } from '../../store';
 import { login } from '../../store/authSlice';
 import './home.scss'
+import { useTranslation } from 'react-i18next';
 
 
 export default function Home() {
+    const { t } = useTranslation();
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const isAuthenticated = useSelector((state: RootState) => state.auth.isLoggedIn);
@@ -23,9 +25,9 @@ export default function Home() {
 
     return (
         <div className='home-container'>
-            <h1>Welcome to Edu Portal</h1>
-            <p className='home-subtitle'>Your gateway to quizzes and announcements</p>
-            <button onClick={handleLogin} className='login-button'>Get Started</button>
+            <h1> <h1>{t('welcome')}</h1></h1>
+            <p className='home-subtitle'>{t('welcomeMessage')}</p>
+            <button onClick={handleLogin} className='login-button'> {t('login')}</button>
         </div>
     );
 }
