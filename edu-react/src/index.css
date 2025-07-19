@@ -1,6 +1,5 @@
 :root {
   font-family: "Nunito Sans", sans-serif;
-  line-height: 1.5;
   font-weight: 400;
   color: #181633;
   font-synthesis: none;
@@ -8,13 +7,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F3FEFF;
-}
-
-
-body {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  min-width: 320px;
-  min-height: 100vh;
-
 }

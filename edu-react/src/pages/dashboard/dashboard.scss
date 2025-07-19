@@ -1,0 +1,38 @@
+.dashboard-layout {
+  display: flex;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  font-family: 'Nunito sans', sans-serif;
+  background-color: #2B8887;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.logout-btn:hover {
+  background-color: #28b1ae;
+  transform: scale(1.05);
+}

@@ -38,7 +38,7 @@ export default function Dashboard() {
       <main className="dashboard-main">
         <div className="dashboard-header">
           <h1>Dashboard</h1>
-          <button onClick={() => dispatch(logout())}>Logout</button>
+          <button onClick={() => dispatch(logout())} className='logout-btn'>Logout</button>
         </div>
 
         <section>
