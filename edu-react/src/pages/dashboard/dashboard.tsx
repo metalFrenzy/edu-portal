@@ -9,6 +9,8 @@ import QuizCard from '../../components/quizzes-card/quizzes-card';
 import Sidebar from '../../components/sidebar/sidebar';
 import { Announcement } from '../../viewmodels/announcemnts.viewmodel';
 import { Quiz } from '../../viewmodels/quizzes.viewmodel';
+import CampaignIcon from '@mui/icons-material/Campaign';
+import QuizIcon from '@mui/icons-material/MenuBook';
 
 export default function Dashboard() {
   const dispatch = useDispatch();
@@ -24,6 +26,8 @@ export default function Dashboard() {
         ]);
         setAnnouncements(annData);
         setQuizzes(quizData);
+        console.log(annData);
+        console.log(quizData);
       } catch (err) {
         console.error('❌ Error fetching data:', err);
       }
@@ -42,7 +46,7 @@ export default function Dashboard() {
         </div>
 
         <section>
-          <h2>📢 Announcements</h2>
+          <h2><CampaignIcon sx={{ mr: 1 }} /> Announcements</h2>
           <div className="card-grid">
             {announcements.map((a: Announcement) => (
               <AnnouncementCard key={a._id} announcement={a} />
@@ -51,7 +55,7 @@ export default function Dashboard() {
         </section>
 
         <section>
-          <h2>📝 Quizzes</h2>
+          <h2><QuizIcon sx={{ mr: 1 }} /> Quizzes</h2>
           <div className="card-grid">
             {quizzes.map((q: Quiz) => (
               <QuizCard key={q._id} quiz={q} />
