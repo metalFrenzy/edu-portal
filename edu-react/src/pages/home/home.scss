@@ -1,11 +1,11 @@
 .home-container {
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
-  gap: 1rem; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 
@@ -21,17 +21,26 @@
 }
 
 .home-container h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 2.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 2.75rem;
 }
 
 .login-button {
-    font-family: 'Nunito sans', sans-serif ;
-    background-color: #2B8887;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
+  font-family: 'Nunito sans', sans-serif;
+  background-color: #2B8887;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.login-button:hover {
+  background-color: #28b1ae;
+  transform: scale(1.05);
+
 }
