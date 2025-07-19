@@ -29,7 +29,7 @@ export default function Dashboard() {
         console.log(annData);
         console.log(quizData);
       } catch (err) {
-        console.error('❌ Error fetching data:', err);
+        console.error('Error fetching data:', err);
       }
     };
 
@@ -46,7 +46,7 @@ export default function Dashboard() {
         </div>
 
         <section>
-          <h2><CampaignIcon sx={{ mr: 1 }} /> Announcements</h2>
+          <h2><CampaignIcon sx={{ mr: 1, color: '#2b8887' }} /> Announcements</h2>
           <div className="card-grid">
             {announcements.map((a: Announcement) => (
               <AnnouncementCard key={a._id} announcement={a} />
@@ -55,7 +55,7 @@ export default function Dashboard() {
         </section>
 
         <section>
-          <h2><QuizIcon sx={{ mr: 1 }} /> Quizzes</h2>
+          <h2><QuizIcon sx={{ mr: 1, color: '#2b8887' }} /> Quizzes</h2>
           <div className="card-grid">
             {quizzes.map((q: Quiz) => (
               <QuizCard key={q._id} quiz={q} />

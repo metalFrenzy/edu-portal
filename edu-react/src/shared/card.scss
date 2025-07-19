@@ -20,3 +20,17 @@
   justify-content: end;
   display: grid;
 }
+/* Responsive styles */
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}

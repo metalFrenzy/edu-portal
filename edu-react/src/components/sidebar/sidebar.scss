@@ -29,3 +29,17 @@
     }
   }
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .sidebar ul li {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
