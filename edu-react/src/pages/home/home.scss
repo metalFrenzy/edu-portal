@@ -1,0 +1,37 @@
+.home-container {
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  gap: 1rem; 
+}
+
+
+
+.home-subtitle {
+  font-size: 1.25rem;
+  color: #617185;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home-container h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 2.75rem;
+}
+
+.login-button {
+    font-family: 'Nunito sans', sans-serif ;
+    background-color: #2B8887;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+}

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { RootState } from '../../store';
 import { login } from '../../store/authSlice';
-import '/home.scss'
+import './home.scss'
 
 
 export default function Home() {
@@ -22,9 +22,10 @@ export default function Home() {
     }, [isAuthenticated, navigate]);
 
     return (
-        <div>
+        <div className='home-container'>
             <h1>Welcome to Edu Portal</h1>
-            <button onClick={handleLogin}>Login</button>
+            <p className='home-subtitle'>Your gateway to quizzes and announcements</p>
+            <button onClick={handleLogin} className='login-button'>Get Started</button>
         </div>
     );
 }
