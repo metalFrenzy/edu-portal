@@ -10,6 +10,14 @@ export default function AnnouncementCard({ announcement }: Props) {
         <div className="card">
             <h3>{announcement.title}</h3>
             <p>{announcement.content}</p>
+            <div className='date'>
+                <p>
+                    {new Date(announcement.date).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: '2-digit',
+                    })}
+                </p>
+            </div>
         </div>
     );
 }

@@ -10,6 +10,14 @@ export default function QuizCard({ quiz }: Props) {
         <div className="card">
             <h3>{quiz.title}</h3>
             <p>Total Marks: {quiz.totalMarks}</p>
+            <div className='date'>
+                <p>
+                    {new Date(quiz.createdAt).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: '2-digit',
+                    })}
+                </p>
+            </div>
         </div>
     );
 }
